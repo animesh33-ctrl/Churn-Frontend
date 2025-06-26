@@ -9,7 +9,7 @@ const ResultProvider = ({ children }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/predict", {
+      const response = await fetch("https://churn-backend-hy5b.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
